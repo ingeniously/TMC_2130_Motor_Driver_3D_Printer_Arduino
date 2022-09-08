@@ -94,6 +94,7 @@ Pinout
 ======
  #### Pin Functions  
    POWER SUPPLY 
+   
     GND  ----->  GROUND
 
     VM    ----->  MOTOR SUPPLY VOLTAGE (5.5V - 46V)
@@ -101,7 +102,7 @@ Pinout
     VIO    ---->  LOGIC SUPPLU VOLTAGE  (3.3V -5V)
 
 
- ####MOTOR  OUTPUTS
+ #### MOTOR  OUTPUTS
 
   M1A    ---->  MOTOR Bobine 1 (Black)
   
