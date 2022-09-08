@@ -91,10 +91,9 @@ La communication sur le bus est orchestrée de la manière suivante :
 
 
 Pinout
-======
- ###### Pin Functions  
+======  
  
-    POWER SUPPLY 
+ ###### POWER SUPPLY 
    
     GND  ----->  GROUND
 
@@ -123,13 +122,13 @@ Pinout
 
 #### TMC2130 SPI MODE (SPI jumper Ouvert)
 
-   SDO/CFG0  ---->   MISO - Serial Data Output    (pin 11 )
+    SDO/CFG0  ---->   MISO - Serial Data Output    (pin 11 )
 
-   SDI/CFG1    ---->   MOSI - Serial Data Input        (pin 12)
+    SDI/CFG1    ---->   MOSI - Serial Data Input        (pin 12)
 
-   SCK/CFG2  ---->   SCLK - Serial Clock Input,      (pin 13
+    SCK/CFG2  ---->   SCLK - Serial Clock Input,      (pin 13
 
-   CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
+    CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
 
 
 SOFTWARE
@@ -241,6 +240,14 @@ ect....
 Puis tour terminer,Afin de controler
 Lien Externe
 ============
-- A <a href="https://www.pololu.com/category/120/stepper-motor-drivers">stepper motor driver</a>, for example DRV8834, DRV8825, DRV8824, A4988.
-- A <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
+
+- A <a href="https://reprap.org/wiki/TMC2130">https://reprap.org/wiki/TMC2130</a>.
+- - A <a href="[https://reprap.org/wiki/TMC2130](https://www.omc-stepperonline.com/download/17HS24-2104S.pdf)">[https://reprap.org/wiki/TMC2130](https://www.omc-stepperonline.com/download/17HS24-2104S.pdf)</a>.
+
+- A <a href="[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)">[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)</a>.
+
+- A <a href="[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)">[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)</a>.
+
+- A <a href="[https://reprap.org/wiki/TMC2130](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8)">[https://reprap.org/wiki/TMC2130](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8)</a>.
+
 
