@@ -93,7 +93,8 @@ L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : b
 Pinout
 ======
  #### Pin Functions  
-   POWER SUPPLY 
+ 
+    POWER SUPPLY 
    
     GND  ----->  GROUND
 
@@ -104,13 +105,13 @@ Pinout
 
  #### MOTOR  OUTPUTS
 
-  M1A    ---->  MOTOR Bobine 1 (Black)
+  M1A  ---->  MOTOR Bobine 1 (Black)
   
-  M1B    ---->  MOTOR Bobine 1 (Green)
+  M1B   ---->  MOTOR Bobine 1 (Green)
   
-  M2A   ---->   MOTOR COIL 2 (Red)
+  M2A    ---->   MOTOR COIL 2 (Red)
   
-  M2B   ---->   MOTOR COIL 2 (blue)
+  M2B     ---->   MOTOR COIL 2 (blue)
 
 ###### CONTROL INPUTS 
   
