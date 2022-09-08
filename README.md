@@ -36,6 +36,8 @@ En effet par defaut il est en Mode Standalone
 
 Pour passer au mode SPI,il Faut retirer  la resistance R5 de 0 ohm avec un fer chaud puis etablir une conection pour les broches des Registres CFG4 et CFG5 comme si dessous.
 
+![alt tag](https://user-images.githubusercontent.com/111455408/189160040-91af5ae8-5779-48a6-acf4-d558fd49ba38.jpg)
+
 
 Lorseque la carte est par defaut en mode SPI il n’y aucune modification a faire
 
@@ -43,11 +45,11 @@ Parametres
 ==========
 Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
 
--<span style="color:red">some **Stealhchop** text</span>
+- **Stealhchop** 
 
--<span style="color:red">some **Cool Step** text</span>
+- **Cool Step**
 
--<span style="color:red">some **Spread cycle** text</span>
+- **Spread cycle**
 
 
 Pour fixer des parametres par defauts pour la consomation de courant  il faut adjuser la tension grace au potentiometre
@@ -63,7 +65,9 @@ Motors
 ======
 
 - 4-wire bipolar stepper motor or 
+![alt tag](https://user-images.githubusercontent.com/111455408/189160349-22c79bc9-b64d-4aab-bc36-427224533852.PNG)
 
+![alt tag](https://user-images.githubusercontent.com/111455408/189159308-c68a0001-e52f-4c9b-be46-5636d29a0059.jpg)
 
 SPI
 ===
@@ -134,7 +138,9 @@ Pinout
 
     CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
 
+![alt tag](https://user-images.githubusercontent.com/111455408/189159308-c68a0001-e52f-4c9b-be46-5636d29a0059.jpg)
 
+![alt tag](https://user-images.githubusercontent.com/111455408/189159308-c68a0001-e52f-4c9b-be46-5636d29a0059.jpg)
 SOFTWARE
 ========
 Je tiens a preciser que j'utilise un arduino Uno et les pin pour le SPI Varie according to your Arduino board
@@ -189,49 +195,52 @@ Veuillez verifier votre cablage
 La fonction "driver.shaft_dir" de la bibliotheque TMC2130Stepper.h permet d'inverser la direction de rotation du moteur ;
  
 
+
 ```C++
 #define EN_PIN    5  
-#define DIR_PIN   6 
+#define DIR_PIN   6  
 #define STEP_PIN  7  
 #define CS_PIN    10  
 #define MOSI_PIN  11
 #define MISO_PIN 12
 #define SCK_PIN  13
 
-bool dir = true;
+constexpr uint32_t steps_per_mm = 80;
 
 #include <TMC2130Stepper.h>
-TMC2130Stepper driver = TMC2130Stepper(EN_PIN, DIR_PIN, STEP_PIN, CS_PIN, MOSI_PIN, MISO_PIN, SCK_PIN);
+TMC2130Stepper driver = TMC2130Stepper(EN_PIN, DIR_PIN, STEP_PIN, CS_PIN);
+
+#include <AccelStepper.h>
+AccelStepper stepper = AccelStepper(stepper.DRIVER, STEP_PIN, DIR_PIN);
 
 void setup() {
-	Serial.begin(9600);
-	while(!Serial);
-	Serial.println("Start...");
-	driver.begin(); 	
-	driver.rms_current(600); 	// Courrant du moteur
-	driver.stealthChop(1); 	
-	
-	digitalWrite(EN_PIN, LOW);
+   // SPI.begin();
+    Serial.begin(9600);
+    while(!Serial);
+    Serial.println("Start...");
+    pinMode(CS_PIN, OUTPUT);
+    digitalWrite(CS_PIN, HIGH);
+    driver.begin();             // Initiate pins and registeries
+    driver.rms_current(600); 
+      driver.SilentStepStick2130(1000);
+    driver.stealthChop(1);      // Enable extremely quiet stepping
+    driver.stealth_autoscale(1);
+    driver.microsteps(16);
+    stepper.setMaxSpeed(50*steps_per_mm); // 100mm/s @ 80 steps/mm
+    stepper.setAcceleration(1000*steps_per_mm); // 2000mm/s^2
+    stepper.setEnablePin(EN_PIN);
+    stepper.setPinsInverted(false, false, true);
+    stepper.enableOutputs();
 }
 
 void loop() {
-	digitalWrite(STEP_PIN, HIGH);
-	delayMicroseconds(10);
-	digitalWrite(STEP_PIN, LOW);
-	delayMicroseconds(10);
-	uint32_t ms = millis();
-	static uint32_t last_time = 0;
-	if ((ms - last_time) > 2000) {
-		if (dir) {
-			Serial.println("Dir -> 0");
-			driver.shaft_dir(0);
-		} else {
-			Serial.println("Dir -> 1");
-			driver.shaft_dir(1);
-		}
-		dir = !dir;
-		last_time = ms;
-	}
+    if (stepper.distanceToGo() == 0) {
+        stepper.disableOutputs();
+        delay(100);
+        stepper.move(100*steps_per_mm); // Move 100mm
+        stepper.enableOutputs();
+    }
+    stepper.run();
 }
 ```
 - Pour controller en temps reel les parametres du moteur,Ce code vous permettra d'envoyer des donneés par la liaso UART du moniteur Serie meme lorseque le moteur est en plein fonctionnement grace a certainne fonction de la bibliotheque TMC2130Stepper
