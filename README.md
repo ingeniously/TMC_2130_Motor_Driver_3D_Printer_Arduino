@@ -42,8 +42,10 @@ Lorseque la carte est par defaut en mode SPI il n’y aucune modification a fair
 Parametres
 ==========
 Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
--Stealh chop
+-[color=#26B260]Stealh chop[/color]
+
 -Cool step
+
 -Spread cycle
 
 Pour fixer des parametres par defauts pour la consomation de courant  il faut adjuser la tension grace au potentiometre
@@ -235,9 +237,9 @@ par exemple
 La commande run 0 permet d'arreter le moteur puis Run 1 le remetre en marche
 La commande speed permet d'envoyer la valeur de  vitesse 10-speed-4649
 shaft_dir inverse le sens de rotation
-
 ect....
 Puis tour terminer,Afin de controler
+
 Lien Externe
 ============
 -  <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
