@@ -240,17 +240,21 @@ ect....
 Puis tour terminer,Afin de controler
 Lien Externe
 ============
-- A <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
+-  <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
 
-- A <a href="https://reprap.org/wiki/TMC2130">TMC2130</a>.
+-  <a href="https://reprap.org/wiki/TMC2130">TMC2130</a>.
 
-- A <a href="https://www.omc-stepperonline.com/download/17HS24-2104S.pdf">17HS24-2104S MOTEUR</a>.
-
-
-- A <a href="https://reprap.org/wiki/TMC2130">https://reprap.org/wiki/TMC2130</a>.
+-  <a href="https://www.omc-stepperonline.com/download/17HS24-2104S.pdf">17HS24-2104S MOTEUR</a>.
 
 
-- A <a href="https://reprap.org/wiki/TMC2130">https://reprap.org/wiki/TMC2130</a>.
+-  <a href="https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html">TMC Hardware setup</a>.
 
-- A <a href="https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8">GRBL V4</a>.
+
+- <a href="https://www.davidpilling.com/wiki/index.php/TMC2130">TMC AVEC GRBL </a>.
+
+- <a href="https://pecquery.wixsite.com/arduino-passion/la-liaison-spi">SPI</a>.
+
+- <a href="https://reprap.org/forum/read.php?2,864566">Standalone </a>.
+
+- A <a href="https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8">Probleme de certains GRBL V4</a>.
 
