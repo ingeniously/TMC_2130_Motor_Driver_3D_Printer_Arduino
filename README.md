@@ -1,11 +1,5 @@
 # TMC-2130-Arduino-Hardware-and-Software
 
-[![arduino-library-badge](https://www.ardu-badge.com/badge/StepperDriver.svg?)](https://www.ardu-badge.com/StepperDriver)
-[![Actions Status](https://github.com/laurb9/StepperDriver/workflows/PlatformIO/badge.svg)](https://github.com/laurb9/StepperDriver/actions)
-[![Actions Status](https://github.com/laurb9/StepperDriver/workflows/Arduino/badge.svg)](https://github.com/laurb9/StepperDriver/actions)
-
-Hardware
-=============
 Le TMC2130 est un Drivers pour moteur pas a pas pour la gestion des moteurs pas a pas .Il fonctionne presque comme le A4988.Principalement utiliser pour les imprimantes et les machines CCN.
 Il est facile a prendres en charges lorsque le connection Hardware est bien faite.
 
@@ -144,7 +138,7 @@ Pinout
 
 ![alt tag](https://user-images.githubusercontent.com/111455408/189161743-83649f21-36ce-4a46-a1dd-a20a02fd744b.jpg)
 
-![alt tag](https://user-images.githubusercontent.com/111455408/189159308-c68a0001-e52f-4c9b-be46-5636d29a0059.jpg)
+
 SOFTWARE
 ========
 Je tiens a preciser que j'utilise un arduino Uno et les pin pour le SPI Varie according to your Arduino board
@@ -692,7 +686,8 @@ void loop() {
 
 Lien Externe
 ============
--  <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
+-  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiMk-_cyYX6AhX3iv0HHQ9LAfUQFnoECAMQAQ&url=https%3A%2F%2Fgithub.com%2Fteemuatlut%2FTMC2130Stepper&usg=AOvVaw2TLMbLapVpaJjcwKECfuLY
+">Libray TMC2130Stepper by teemuatlut</a>.
 
 -  <a href="https://reprap.org/wiki/TMC2130">TMC2130</a>.
 
