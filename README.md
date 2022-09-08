@@ -240,14 +240,17 @@ ect....
 Puis tour terminer,Afin de controler
 Lien Externe
 ============
+- A <a href="http://www.circuitspecialists.com/stepper-motor">Stepper Motor</a>.
+
+- A <a href="https://reprap.org/wiki/TMC2130">TMC2130</a>.
+
+- A <a href="https://www.omc-stepperonline.com/download/17HS24-2104S.pdf">17HS24-2104S MOTEUR</a>.
+
 
 - A <a href="https://reprap.org/wiki/TMC2130">https://reprap.org/wiki/TMC2130</a>.
-- - A <a href="[https://reprap.org/wiki/TMC2130](https://www.omc-stepperonline.com/download/17HS24-2104S.pdf)">[https://reprap.org/wiki/TMC2130](https://www.omc-stepperonline.com/download/17HS24-2104S.pdf)</a>.
 
-- A <a href="[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)">[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)</a>.
 
-- A <a href="[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)">[https://reprap.org/wiki/TMC2130](https://www.microcontrollertutorials.com/2021/07/tmc2130-stepper-motor-driver-working.html)</a>.
+- A <a href="https://reprap.org/wiki/TMC2130">https://reprap.org/wiki/TMC2130</a>.
 
-- A <a href="[https://reprap.org/wiki/TMC2130](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8)">[https://reprap.org/wiki/TMC2130](https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8)</a>.
-
+- A <a href="https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8">GRBL V4</a>.
 
