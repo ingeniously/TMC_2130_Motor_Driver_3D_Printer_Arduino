@@ -92,7 +92,7 @@ L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : b
 
 Pinout
 ======
- ## Pin Functions  
+ #### Pin Functions  
    POWER SUPPLY 
     GND  ----->  GROUND
 
@@ -101,24 +101,32 @@ Pinout
     VIO    ---->  LOGIC SUPPLU VOLTAGE  (3.3V -5V)
 
 
- ## MOTOR  OUTPUTS
+ ####MOTOR  OUTPUTS
 
   M1A    ---->  MOTOR Bobine 1 (Black)
+  
   M1B    ---->  MOTOR Bobine 1 (Green)
+  
   M2A   ---->   MOTOR COIL 2 (Red)
+  
   M2B   ---->   MOTOR COIL 2 (blue)
 
-## CONTROL INPUTS 
+###### CONTROL INPUTS 
   
 STEP   ---->  Step Signal  Inputs 
+
  DIR     ---->   Dir  signal Inputs
+ 
  EN      ---->   Enable Motor Outputs (GND=on, VIO=off, OPEN=Auto-Power-Down)
 
-## TMC2130 SPI MODE (SPI jumper Ouvert)
+#### TMC2130 SPI MODE (SPI jumper Ouvert)
 
 SDO/CFG0  ---->   MISO - Serial Data Output    (pin 11 )
+
 SDI/CFG1    ---->   MOSI - Serial Data Input        (pin 12)
+
 SCK/CFG2  ---->   SCLK - Serial Clock Input,      (pin 13
+
 CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
 
 
