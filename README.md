@@ -42,7 +42,7 @@ Lorseque la carte est par defaut en mode SPI il n’y aucune modification a fair
 Parametres
 ==========
 Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
--[color=#26B260]Stealh chop[/color]
+-[color=#26B260] Stealh chop [/color]
 
 -Cool step
 
@@ -258,5 +258,5 @@ Lien Externe
 
 - <a href="https://reprap.org/forum/read.php?2,864566">Standalone </a>.
 
-- A <a href="https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8">Probleme de certains GRBL V4</a>.
+- <a href="https://www.instructables.com/Fix-Cloned-Arduino-NANO-CNC-Shield/?fbclid=IwAR0JBdvT4k7ZmE-LR8plWQRc3csEvETMqG4wlkIfXm_4Cg-SzEGztKuENK8">Probleme de certains GRBL V4</a>.
 
