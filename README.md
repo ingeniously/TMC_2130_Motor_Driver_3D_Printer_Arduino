@@ -43,7 +43,7 @@ Parametres
 ==========
 Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
 
--<span style="color:red">some **Stealh chop** text</span>
+-<span style="color:red">some **Stealhchop** text</span>
 
 -<span style="color:red">some **Cool Step** text</span>
 
