@@ -20,11 +20,11 @@ versions: V1.0, V1.1, V1.2
 
 Hardware currently supported: 
    Picture 
-[alt tag](https://user-images.githubusercontent.com/111455408/189115534-207be335-79f7-4b4c-8ff1-3e5a14f02948.PNG)
+![alt tag](https://user-images.githubusercontent.com/111455408/189115534-207be335-79f7-4b4c-8ff1-3e5a14f02948.PNG)
 
 Comment reconnaitre une carte fabriqué par defaut avec le mode Standalone??
 
-[alt tag](https://user-images.githubusercontent.com/111455408/189115516-87866e53-8dd2-49a2-89aa-52026fc1c7f9.jpg)
+![alt tag](https://user-images.githubusercontent.com/111455408/189115516-87866e53-8dd2-49a2-89aa-52026fc1c7f9.jpg)
 
 Pour le modele V1.1 il n’y as pas de connection pour CFG4 et CFG5.
 Puis la presence de la resistance R5
@@ -86,8 +86,8 @@ La communication sur le bus est orchestrée de la manière suivante :
 
  - A chaque coup d'horloge, le maître et l'esclave s'échangent un bit sur les lignes MOSI et MISO selon le principe ci-dessous.
 
-    L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : broche numérique N°12, MOSI : broche numérique N°11 et
-    SS : broche numérique N°10 et autres si nous avons plusieurs composants esclaves) 
+   **_L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : broche numérique N°12, MOSI : broche numérique N°11 et
+    SS : broche numérique N°10 et autres si nous avons plusieurs composants esclaves)_**
 
 
 Pinout
@@ -115,25 +115,25 @@ Pinout
 
 ###### CONTROL INPUTS 
   
-STEP   ---->  Step Signal  Inputs 
+    STEP   ---->  Step Signal  Inputs 
 
- DIR     ---->   Dir  signal Inputs
+    DIR     ---->   Dir  signal Inputs
  
- EN      ---->   Enable Motor Outputs (GND=on, VIO=off, OPEN=Auto-Power-Down)
+    EN      ---->   Enable Motor Outputs (GND=on, VIO=off, OPEN=Auto-Power-Down)
 
 #### TMC2130 SPI MODE (SPI jumper Ouvert)
 
-SDO/CFG0  ---->   MISO - Serial Data Output    (pin 11 )
+   SDO/CFG0  ---->   MISO - Serial Data Output    (pin 11 )
 
-SDI/CFG1    ---->   MOSI - Serial Data Input        (pin 12)
+   SDI/CFG1    ---->   MOSI - Serial Data Input        (pin 12)
 
-SCK/CFG2  ---->   SCLK - Serial Clock Input,      (pin 13
+   SCK/CFG2  ---->   SCLK - Serial Clock Input,      (pin 13
 
-CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
+   CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
 
 
 SOFTWARE
-====
+========
 Je tiens a preciser que j'utilise un arduino Uno et les pin pour le SPI Varie according to your Arduino board
  -D’abord  pour tester si la connection SPI est fonctionnelle
 Telechercher la bibliotheque TMCStepper by teemuatlut  en clickant ici link puis la bibliotheque Accel Stepper disponible dans le gestionnaire de bibliotheque Arduino IDE.
