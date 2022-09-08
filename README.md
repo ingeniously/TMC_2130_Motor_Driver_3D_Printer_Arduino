@@ -80,14 +80,14 @@ Le bus SPI utilise quatre signaux logiques :
 
 La communication sur le bus est orchestrée de la manière suivante :
 
-    Le maître sélectionne l'esclave avec lequel il souhaite communiquer en mettant un niveau bas sur la ligne SS correspondante.
+ - Le maître sélectionne l'esclave avec lequel il souhaite communiquer en mettant un niveau bas sur la ligne SS correspondante.
 
-    Le maître génère le signal d'horloge en fonction des capacités de l'esclave
+ -Le maître génère le signal d'horloge en fonction des capacités de l'esclave
 
-    A chaque coup d'horloge, le maître et l'esclave s'échangent un bit sur les lignes MOSI et MISO selon le principe ci-dessous.
+ - A chaque coup d'horloge, le maître et l'esclave s'échangent un bit sur les lignes MOSI et MISO selon le principe ci-dessous.
 
-L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : broche numérique N°12, MOSI : broche numérique N°11 et
- SS : broche numérique N°10 et autres si nous avons plusieurs composants esclaves) 
+    L'Arduino Uno possède une liaison SPI (SCLK : broche numérique N°13, MISO : broche numérique N°12, MOSI : broche numérique N°11 et
+    SS : broche numérique N°10 et autres si nous avons plusieurs composants esclaves) 
 
 
 Pinout
