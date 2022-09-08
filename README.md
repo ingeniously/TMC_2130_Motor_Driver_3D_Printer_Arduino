@@ -42,11 +42,13 @@ Lorseque la carte est par defaut en mode SPI il n’y aucune modification a fair
 Parametres
 ==========
 Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
--[color=#26B260] Stealh chop [/color]
 
--Cool step
+-<span style="color:red">some **Stealh chop** text</span>
 
--Spread cycle
+-<span style="color:red">some **Cool Step** text</span>
+
+-<span style="color:red">some **Spread cycle** text</span>
+
 
 Pour fixer des parametres par defauts pour la consomation de courant  il faut adjuser la tension grace au potentiometre
 Par exemple 
