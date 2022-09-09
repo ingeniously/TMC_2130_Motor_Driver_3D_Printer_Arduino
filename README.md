@@ -42,7 +42,7 @@ Lorseque la carte est par defaut en mode SPI il n’y aucune modification a fair
 Parametres
 ==========
 
-####Mode d'operation
+#### Mode d'operation
 
 2-phase stepper motors up to 2.0A coil current (2.5A peak)
 
@@ -53,7 +53,7 @@ Parametres
 
 - **SPI Driver Mode**
 
- ####Control and precision
+ #### Control and precision
 
 - **stallGuard2** for high precision sensorless motor load detection
 
@@ -61,7 +61,7 @@ Parametres
 
 - **dcStep**  Dependent speed control 
 
- ####Motion
+ #### Motion
 
 - **spreadCycle**  highly dynamic motor contro
 
