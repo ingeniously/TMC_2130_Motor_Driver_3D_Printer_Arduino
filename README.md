@@ -41,13 +41,32 @@ Lorseque la carte est par defaut en mode SPI il n’y aucune modification a fair
 
 Parametres
 ==========
-Puis plusieurs parametres pour lesquels les moteurs se comportent differement 
 
-- **Stealhchop** 
+####Mode d'operation
 
-- **Cool Step**
+2-phase stepper motors up to 2.0A coil current (2.5A peak)
 
-- **Spread cycle**
+- **Step/Direction Driver Mode** using combinaison between TMC2130 and TMC429
+
+
+- **Standalone Mode**
+
+- **SPI Driver Mode**
+
+ ####Control and precision
+
+- **stallGuard2** for high precision sensorless motor load detection
+
+- **Cool Step** current control for energy savings up to 75% 
+
+- **dcStep**  Dependent speed control 
+
+ ####Motion
+
+- **spreadCycle**  highly dynamic motor contro
+
+- **stealthChop** for extremely quiet operation and smooth motion
+
 
 
 Pour fixer des parametres par defauts pour la consomation de courant  il faut adjuser la tension grace au potentiometre
