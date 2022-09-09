@@ -76,12 +76,14 @@ Par exemple
 Avec la formule ci dessous
 Retenez que plus la consomation est grande plus la puissance du moteur est grande.Il y’a cependant une limite.
 
-
+![alt tag](https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md)
 
 Motors
 ======
 
-- 4-wire bipolar stepper motor or 
+4-wire bipolar stepper motor 
+
+
 ![alt tag](https://user-images.githubusercontent.com/111455408/189160349-22c79bc9-b64d-4aab-bc36-427224533852.PNG)
 
 ![alt tag](https://user-images.githubusercontent.com/111455408/189159308-c68a0001-e52f-4c9b-be46-5636d29a0059.jpg)
@@ -155,7 +157,11 @@ Pinout
 
     CS/CFG3    ---->    SS - Chip Select Input         (pin 10)
 
+![alt tag](https://user-images.githubusercontent.com/111455408/189376870-82b2cf56-af73-4a9e-a835-b4c68e4d5674.PNG)
+
+
 ![alt tag](https://user-images.githubusercontent.com/111455408/189161743-83649f21-36ce-4a46-a1dd-a20a02fd744b.jpg)
+
 
 
 SOFTWARE
@@ -169,7 +175,6 @@ Telechercher la bibliotheque TMCStepper by teemuatlut  en clickant ici link puis
  * Author Cedric Francois
  * Initializes the library and Show on the serial monito the DRVstatus sor SPI coonection.
 */
-```C++
 #define EN_PIN    5  
 #define DIR_PIN   6  
 #define STEP_PIN  7  
