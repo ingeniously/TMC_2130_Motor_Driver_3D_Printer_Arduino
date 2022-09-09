@@ -1,10 +1,10 @@
 # TMC-2130-Arduino-Hardware-and-Software
 
-Le TMC2130 est un Drivers pour moteur pas a pas pour la gestion des moteurs pas a pas .Il fonctionne presque comme le A4988.Principalement utiliser pour les imprimantes et les machines CCN.
+Le TMC2130 est un Drivers pour moteur pas a pas pour la gestion des moteurs pas a pas .Il fonctionne presque comme le A4988.Principalement utiliser pour les imprimantes et les machines CNC.
 Il est facile a prendres en charges lorsque le connection Hardware est bien faite.
 
 Il possede 2 modes de fonctionnement principaux qui sont le Mode Standalone et le mode SPI.
-Certains models sont fabriqué par defauts avec le mode SPI d'autes par contres avec le mode SPI
+Certains models sont fabriqué par defaut avec le mode SPI d'autes par contres avec le mode SPI
 
 versions: V1.0, V1.1, V1.2
 
@@ -74,6 +74,9 @@ Par exemple
 0.3A => 0.42V on the adjusting screw
 0.6A => 0.85V on the adjusting screw
 Avec la formule ci dessous
+
+<a href="https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md">Formule et parametre</a>.
+
 Retenez que plus la consomation est grande plus la puissance du moteur est grande.Il y’a cependant une limite.
 
 ![alt tag](https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md)
