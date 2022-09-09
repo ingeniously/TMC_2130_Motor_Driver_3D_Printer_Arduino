@@ -75,11 +75,11 @@ Par exemple
 0.6A => 0.85V on the adjusting screw
 Avec la formule ci dessous
 
-<a href="https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md">Formule et parametre</a>.
+![Formule et Parametres](https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md)
+
 
 Retenez que plus la consomation est grande plus la puissance du moteur est grande.Il y’a cependant une limite.
 
-![alt tag](https://github.com/teemuatlut/TMC2130Stepper/blob/master/README.md)
 
 Motors
 ======
