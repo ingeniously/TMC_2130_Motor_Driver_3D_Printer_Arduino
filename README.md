@@ -146,6 +146,7 @@ Pinout
   
     STEP   ---->  Step Signal  Inputs 
 
+
     DIR     ---->   Dir  signal Inputs
  
     EN      ---->   Enable Motor Outputs (GND=on, VIO=off, OPEN=Auto-Power-Down)
